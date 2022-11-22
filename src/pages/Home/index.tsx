@@ -1,4 +1,5 @@
 import { TextAboutUs } from 'common/resources/home'
+import * as Atoms from 'components/Atoms'
 import * as Molecules from 'components/Molecules'
 import * as S from './styles'
 
@@ -15,7 +16,14 @@ export function Home() {
         <S.MakeTrip>
           <form>
             <div className="div-form">
-              <p>teste </p>
+              <Atoms.TitleBox> Peça um Carro </Atoms.TitleBox>
+              <Atoms.Input type="text" label="De Onde:" placeholder="De onde você está partindo?" />
+              <Atoms.Input
+                type="text"
+                label="Para Onde:"
+                placeholder="Para onde você quer ir hoje?"
+              />
+              <Atoms.Button>Pedir</Atoms.Button>
             </div>
           </form>
         </S.MakeTrip>

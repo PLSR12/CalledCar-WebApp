@@ -32,6 +32,7 @@ export const MakeTrip = styled.div`
   align-items: center;
   .div-form {
     background: #eaeaea;
+    padding: 40px;
     width: 500px;
     height: 500px;
     border-radius: 25px;
