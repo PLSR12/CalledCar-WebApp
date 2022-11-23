@@ -19,3 +19,5 @@ export const TextArea: React.FC<any> = React.forwardRef(
     )
   }
 )
+
+TextArea.displayName = 'TextAreaComponent'

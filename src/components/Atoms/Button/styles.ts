@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContainerButton = styled.button`
   width: 100%;
   height: 48px;
-  background: #0d25d9;
+  background: #f22e52;
   color: #fff;
   font-weight: 700;
   font-size: 1em;

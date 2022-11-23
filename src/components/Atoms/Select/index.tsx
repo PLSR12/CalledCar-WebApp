@@ -19,3 +19,5 @@ export const Select: React.FC<any> = React.forwardRef(
     )
   }
 )
+
+Select.displayName = 'SelectComponent'

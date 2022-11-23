@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
-
 import { FiMenu } from 'react-icons/fi'
-
+import { Link } from 'react-router-dom'
+import { Link as Linked } from 'react-scroll'
 import * as S from './styles'
 
 export function Header() {
@@ -15,8 +14,12 @@ export function Header() {
             <h1>MoveCar</h1>
           </Link>
           <S.Nav>
-            <a>Sobre Nós</a>
-            <a>Peça um Carro</a>
+            <Linked to="about-us" spy={true} smooth={true} offset={-70} duration={500}>
+              Sobre Nós
+            </Linked>
+            <Linked to="make-trip" spy={true} smooth={true} offset={-70} duration={500}>
+              Faça sua viagem
+            </Linked>
           </S.Nav>
         </S.ContainerLeft>
         <S.ContainerRight></S.ContainerRight>
@@ -25,14 +28,18 @@ export function Header() {
           {showNav && (
             <nav className={`navHamburguer ${showNav ? 'navTrue' : 'navFalse'}`}>
               <li>
-                <Link to="/" style={{ textDecoration: 'none' }} onClick={() => setShowNav(false)}>
-                  Sobre Nós
-                </Link>
+                <Linked to="about-us" spy={true} smooth={true} offset={-70} duration={500}>
+                  <Link to="/" style={{ textDecoration: 'none' }} onClick={() => setShowNav(false)}>
+                    Sobre Nós
+                  </Link>
+                </Linked>
               </li>
               <li>
-                <Link to="/" style={{ textDecoration: 'none' }} onClick={() => setShowNav(false)}>
-                  Peça um Carro
-                </Link>
+                <Linked to="make-trip" spy={true} smooth={true} offset={-70} duration={500}>
+                  <Link to="/" style={{ textDecoration: 'none' }} onClick={() => setShowNav(false)}>
+                    Faça sua viagem
+                  </Link>
+                </Linked>
               </li>
             </nav>
           )}

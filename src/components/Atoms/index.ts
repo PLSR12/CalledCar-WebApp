@@ -1,4 +1,6 @@
 export { Button } from './Button'
 export { Input } from './Input'
+export { InputDate } from './InputDate'
 export { Select } from './Select'
 export { TextArea } from './TextArea'
+export { TitleBox } from './TitleBox'

@@ -1,16 +1,19 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+
   label {
-    display: block;
-    padding: 0 0 8px 0;
-    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    padding: 0 0 4px 8px;
     font-weight: 600;
-    color: #000;
-    letter-spacing: 0em;
-    text-align: left;
+    font-size: 13px;
+    line-height: 150%;
+    color: #000000;
   }
+
   input {
     height: 38px;
     width: 100%;
@@ -19,7 +22,6 @@ export const Container = styled.div`
     border: 1px solid #ced4da;
     overflow: hidden;
     text-overflow: ellipsis;
-
     font-size: 16px;
 
     &:hover::placeholder {
@@ -27,7 +29,7 @@ export const Container = styled.div`
     }
 
     &:hover {
-      border-color: #000;
+      border-color: #000000;
     }
 
     &::placeholder {
@@ -35,7 +37,7 @@ export const Container = styled.div`
     }
 
     &:focus {
-      border: 1px solid #000;
+      border: 1px solid #000000;
     }
 
     &:disabled {
@@ -44,7 +46,7 @@ export const Container = styled.div`
   }
 
   div {
-    color: #d90f06;
+    color: #fcfaf6;
     margin: 5px 0 0 5px;
   }
 `

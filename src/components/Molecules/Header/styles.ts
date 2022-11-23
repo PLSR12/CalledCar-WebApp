@@ -7,14 +7,15 @@ export const MainContainer = styled.div`
   border: 1px solid #b5b5b5;
   padding: 20px 60px;
   position: fixed;
-  background: #fff;
+  background: #ffffff;
   top: 0rem;
   left: 0rem;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.37);
   @media only screen and (max-width: 450px) {
     padding: 20px 20px;
+    width: 100%;
   }
 `
 
@@ -126,6 +127,7 @@ export const MenuHamburguer = styled.div`
     transition: 1s;
   }
   .navTrue {
+    width: 100%;
     transition: 1s;
     margin-left: 0px;
     opacity: 1;
