@@ -19,7 +19,7 @@ export const Container = styled.div`
     width: 100%;
     padding: 14px 12px;
     border-radius: 4px;
-    border: 1px solid #ced4da;
+    border: 1px solid #000000;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 16px;
