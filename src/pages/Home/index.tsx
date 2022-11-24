@@ -67,13 +67,13 @@ export function Home() {
   useEffect(() => {
     getUserLocationCoord()
     getDateToday()
-  }, [])
+  })
 
   useEffect(() => {
     if (userLocationCoord?.length !== 0) {
       getAddressUser()
     }
-  }, [userLocationCoord])
+  })
 
   return (
     <>
