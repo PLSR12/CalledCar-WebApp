@@ -4,7 +4,6 @@ import * as Atoms from 'components/Atoms'
 import * as Molecules from 'components/Molecules'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { toast } from 'react-toastify'
 import * as S from './styles'
 import { TripSchema } from './validations'
 
@@ -59,21 +58,19 @@ export function Home() {
           })
         })
         .catch(() => {})
-    } catch (error) {
-      toast.error('Não foi possível obter sua localização')
-    }
+    } catch (error) {}
   }
 
   useEffect(() => {
     getUserLocationCoord()
     getDateToday()
-  })
+  }, [])
 
   useEffect(() => {
     if (userLocationCoord?.length !== 0) {
       getAddressUser()
     }
-  })
+  }, [userLocationCoord])
 
   return (
     <>
