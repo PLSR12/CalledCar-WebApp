@@ -10,9 +10,11 @@ export function Header() {
     <>
       <S.MainContainer>
         <S.ContainerLeft>
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <h1>MoveCar</h1>
-          </Link>
+          <div className="title-container">
+            <h1>MOVE</h1>
+            <h2>CAR</h2>
+          </div>
+
           <S.Nav>
             <Linked to="about-us" spy={true} smooth={true} offset={-70} duration={500}>
               Sobre Nós

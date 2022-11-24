@@ -23,11 +23,22 @@ export const ContainerLeft = styled.div`
   display: flex;
   align-items: center;
   gap: 60px;
-  h1 {
-    font-size: 26px;
-    cursor: pointer;
-    color: #000;
-    text-decoration: none;
+
+  .title-container {
+    display: grid;
+    grid-template-columns: 72px 50px;
+    margin-left: 30px;
+
+    h1 {
+      font-size: 26px;
+      cursor: pointer;
+      color: #6aa5d9a4;
+    }
+    h2 {
+      font-size: 26px;
+      cursor: pointer;
+      color: #f22e52;
+    }
   }
 `
 
