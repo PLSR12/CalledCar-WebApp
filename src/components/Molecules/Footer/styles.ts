@@ -4,7 +4,6 @@ export const Container = styled.div`
   width: 100%;
   footer {
     background-color: #595959;
-    margin-top: 50px;
   }
   .mais-info {
     max-width: 1000px;

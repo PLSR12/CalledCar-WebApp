@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
+  box-shadow: 5px rgba(0, 0, 0, 0.575);
 
   #apresentacao {
     background-color: #eaeaea;
-    margin-top: 50px;
   }
   .informativo {
     display: flex;
