@@ -86,31 +86,33 @@ export function Home() {
         </S.AboutUs>
         <Molecules.Apresentation />
         <S.MakeTrip className="make-trip">
+          <S.Title>Solicite sua Viagem</S.Title>
           <form onSubmit={handleSubmit(onSubmitTrip)}>
-            <S.Title style={{ marginTop: 15, marginBottom: 25 }}>Faça sua Viagem</S.Title>
-            <div className="div-form">
-              <Atoms.InputDate label="Data:" {...register('dateRoute')} error={errors.dateRoute} />
-              <Atoms.Input
-                type="text"
-                label="De Onde:"
-                placeholder="De onde você está partindo?"
-                {...register('startRoute')}
-                error={errors.startRoute}
-              />
-              <Atoms.Input
-                type="text"
-                label="Para Onde:"
-                placeholder="Para onde você quer ir hoje?"
-                {...register('endRoute')}
-                error={errors.endRoute}
-              />
-              <Atoms.Button type="submit" style={{ marginTop: '35px' }}>
-                Pedir
-              </Atoms.Button>
-            </div>
+            <Atoms.InputDate
+              label="Data da Viagem:"
+              {...register('dateRoute')}
+              error={errors.dateRoute}
+            />
+            <Atoms.Input
+              type="text"
+              label="De Onde:"
+              placeholder="De onde você está partindo?"
+              {...register('startRoute')}
+              error={errors.startRoute}
+            />
+            <Atoms.Input
+              type="text"
+              label="Para Onde:"
+              placeholder="Para onde você quer ir hoje?"
+              {...register('endRoute')}
+              error={errors.endRoute}
+            />
+            <Atoms.Button type="submit" style={{ marginTop: '35px' }}>
+              Solicitar
+            </Atoms.Button>
           </form>
-          <Molecules.Footer />
         </S.MakeTrip>
+        <Molecules.Footer />
       </S.Container>
     </>
   )

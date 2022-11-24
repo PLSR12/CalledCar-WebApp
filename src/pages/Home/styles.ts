@@ -7,7 +7,6 @@ export const Container = styled.section`
 `
 
 export const AboutUs = styled.main`
-  display: flex;
   width: 100%;
   background-color: #ffffff;
   flex-flow: column wrap;
@@ -31,13 +30,18 @@ export const MakeTrip = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 60px;
   align-items: center;
-  .div-form {
-    background: #6aa5d9a4;
-    padding: 50px;
-    width: max-content;
-    height: max-content;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.575);
+  background: #ffffffff;
+
+  form {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: 1024px) {
+      width: 70%;
+      height: 70%;
+    }
   }
 `
